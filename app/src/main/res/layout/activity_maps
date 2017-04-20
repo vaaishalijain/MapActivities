@@ -1,0 +1,39 @@
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eAddress" />
+
+        <Button
+        android:layout_width="385dp"
+        android:layout_height="36dp"
+        android:text="Search"
+        android:id="@+id/sButton"
+        android:layout_gravity="right"
+        android:onClick="onSearch" />
+
+        <Button
+        android:layout_width="385dp"
+        android:layout_height="36dp"
+        android:text="Change Map Type"
+        android:id="@+id/MButton"
+        android:layout_gravity="center_horizontal"
+        android:onClick="changeType" />
+
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="385dp"
+        android:layout_height="492dp"
+        tools:context="com.example.vaishalijain.google_maps.MapsActivity" />
+
+    </LinearLayout>
